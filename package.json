@@ -1,0 +1,26 @@
+{
+  "name": "greeting-lambda",
+  "version": "1.0.0",
+  "description": "Sample Greeting Lambda function",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": "4.3.2"
+  },
+  "scripts": {
+    "test"                    : "mocha --recursive",
+    "xunit-test"              : "XUNIT_FILE=xunit-test.xml mocha --recursive -R xunit-file",
+    "itest-lambda"            : "mocha --recursive lambda-itest",
+    "xunit-itest-lambda"      : "XUNIT_FILE=xunit-lambda-itest.xml mocha --recursive itest-lambda -R xunit-file",
+    "itest-api-gateway"       : "mocha --recursive api-gateway-itest",
+    "xunit-itest-api-gateway" : "XUNIT_FILE=xunit-api-gateway-itest.xml mocha --recursive itest-api-gateway -R xunit-file"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.4.0",
+    "chai": "3.5.0",
+    "mocha": "2.5.3",
+    "request": "2.74.0",
+    "request-promise": "4.1.1",
+    "xunit-file": "1.0.0"
+  }
+}
