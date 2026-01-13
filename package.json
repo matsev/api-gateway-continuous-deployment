@@ -16,7 +16,7 @@
     "xunit-itest-api-gateway" : "XUNIT_FILE=xunit-api-gateway-itest.xml mocha --recursive itest-api-gateway -R xunit-file"
   },
   "devDependencies": {
-    "aws-sdk": "2.4.0",
+    "aws-sdk": "2.1693.0",
     "chai": "3.5.0",
     "mocha": "2.5.3",
     "request": "2.74.0",
